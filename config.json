@@ -1,7 +1,7 @@
 {
   "config": {
     "input": "labeled_training",
-    "output": "results",
+    "output": ".",
     "relation": "locomotion",
     "classes": [
       "running",
@@ -14,39 +14,58 @@
       "joint": [
         "atlas",
         "upper_spine",
-        "right_wrist",
-        "right_elbow",
         "right_shoulder",
+        "right_elbow",
+        "right_wrist",
         "left_shoulder",
         "left_elbow",
-        "left_wrist"
-      ],
-      "attr": [
-        "x",
-        "y",
-        "z"
-      ]
-    },
-    "mid": {
-      "joint": [
-        "right_shoulder",
-        "right_elbow",
-        "right_wrist",
-        "right_knee",
-        "right_hip",
-        "right_ankle",
         "left_wrist",
+        "mid_spine",
+        "sacrum",
+        "right_hip",
+        "right_knee",
+        "right_ankle",
         "left_hip",
         "left_knee",
-        "skull_top",
-        "atlas",
-        "sacrum"
+        "left_ankle"
       ],
       "attr": [
+        "rx",
+        "ry",
+        "rz",
         "vqw",
         "vqx",
         "vqy",
         "vqz"
+      ]
+    },
+    "mid": {
+      "joint": [
+        "atlas",
+        "upper_spine",
+        "right_shoulder",
+        "right_elbow",
+        "right_wrist",
+        "left_shoulder",
+        "left_elbow",
+        "left_wrist",
+        "mid_spine",
+        "sacrum",
+        "right_hip",
+        "right_knee",
+        "right_ankle",
+        "left_hip",
+        "left_knee",
+        "left_ankle"
+      ],
+      "attr": [
+        "x",
+        "y",
+        "z",
+        "qw",
+        "qx",
+        "qy",
+        "qz"
       ]
     }
   }

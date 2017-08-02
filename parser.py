@@ -25,7 +25,7 @@ def main():
         input_files.update({c: glob.glob("./{}/{}/*.csv".format(parent_in, c))})
 
     # Write an arff file for each tier
-    for tier, desc in tiers.iteritems():
+    for tier, desc in tiers.items():
         output = "{}/{}_{}.arff".format(parent_out, relation, tier)
 
         # Generate the columns which depends on the current tier
@@ -48,7 +48,7 @@ def main():
             # count represents the unique_id
             f.write("@DATA\n")
             count = 0
-            for cl, files in input_files.iteritems():
+            for cl, files in input_files.items():
                 for i in files:
                     m_data = pd.read_csv(i, skipinitialspace=True, usecols=columns)
                     for index, row in m_data.iterrows():

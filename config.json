@@ -1,19 +1,54 @@
 {
-  "output": "locomotion.arff",
-  "parent": "training",
-  "relation": "locomotion",
-  "classes": [
-    "running",
-    "walking",
-    "jumping",
-    "varied"
-  ],
-  "levels": {
-    "path": "levels.json",
-    "level": [
-      "low",
-      "mid"
+  "config": {
+    "input": "labeled_training",
+    "output": "results",
+    "relation": "locomotion",
+    "classes": [
+      "running",
+      "walking",
+      "jumping"
     ]
+  },
+  "tiers": {
+    "low": {
+      "joint": [
+        "atlas",
+        "upper_spine",
+        "right_wrist",
+        "right_elbow",
+        "right_shoulder",
+        "left_shoulder",
+        "left_elbow",
+        "left_wrist"
+      ],
+      "attr": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "mid": {
+      "joint": [
+        "right_shoulder",
+        "right_elbow",
+        "right_wrist",
+        "right_knee",
+        "right_hip",
+        "right_ankle",
+        "left_wrist",
+        "left_hip",
+        "left_knee",
+        "skull_top",
+        "atlas",
+        "sacrum"
+      ],
+      "attr": [
+        "vqw",
+        "vqx",
+        "vqy",
+        "vqz"
+      ]
+    }
   }
 }
 

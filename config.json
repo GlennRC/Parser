@@ -1,7 +1,7 @@
 {
   "config": {
     "input": "labeled_training",
-    "output": ".",
+    "output": "results",
     "relation": "locomotion",
     "classes": [
       "running",

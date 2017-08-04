@@ -51,7 +51,7 @@ def main():
             for cl, files in input_files.items():
                 for i in files:
                     m_data = pd.read_csv(i, skipinitialspace=True, usecols=columns)
-                    for index, row in m_data.iterrows():
+                    for _, row in m_data.iterrows():
                         f.write("{},{},{}\n".format(count, ",".join(map(str, row)), cl))
                         count += 1
 

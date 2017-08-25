@@ -33,6 +33,9 @@ def main():
         for j in desc["joint"]:
             for a in desc["attr"]:
                 columns.append("{}_{}".format(j, a))
+        if "j_attr" in desc:
+            for ja in desc["j_attr"]:
+                columns.append(str(ja))
 
         # begin writing the arff file
         with open(output, mode='w') as f:

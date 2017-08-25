@@ -12,62 +12,72 @@
   "tiers": {
     "low": {
       "joint": [
-        "atlas",
-        "upper_spine",
-        "right_shoulder",
-        "right_elbow",
-        "right_wrist",
+        "left_hip",
+        "left_knee",
+        "left_ankle",
         "left_shoulder",
         "left_elbow",
         "left_wrist",
-        "mid_spine",
-        "sacrum",
+        "right_shoulder",
+        "right_elbow",
         "right_hip",
         "right_knee",
         "right_ankle",
-        "left_hip",
-        "left_knee",
-        "left_ankle"
+        "right_wrist"
       ],
       "attr": [
-        "rx",
-        "ry",
-        "rz",
+        "qw",
+        "qx",
+        "qy",
+        "qz",
+        "vqw",
+        "vqx",
+        "vqy",
+        "vqz"
+      ],
+      "j_attr": [
+        "sacrum_x", "sacrum_y", "sacrum_z", "sacrum_rx", "sacrum_ry", "sacrum_rz"
+      ]
+    },
+    "mid": {
+      "joint": [
+        "left_hip",
+        "left_knee",
+        "left_ankle",
+        "right_hip",
+        "right_knee",
+        "right_ankle"
+      ],
+      "attr": [
+        "qw",
+        "qx",
+        "qy",
+        "qz",
         "vqw",
         "vqx",
         "vqy",
         "vqz"
       ]
     },
-    "mid": {
+    "high": {
       "joint": [
-        "atlas",
-        "upper_spine",
-        "right_shoulder",
-        "right_elbow",
-        "right_wrist",
         "left_shoulder",
         "left_elbow",
         "left_wrist",
-        "mid_spine",
-        "sacrum",
-        "right_hip",
-        "right_knee",
-        "right_ankle",
-        "left_hip",
-        "left_knee",
-        "left_ankle"
+        "right_shoulder",
+        "right_elbow",
+        "right_wrist"
       ],
       "attr": [
-        "x",
-        "y",
-        "z",
         "qw",
         "qx",
         "qy",
-        "qz"
+        "qz",
+        "vqw",
+        "vqx",
+        "vqy",
+        "vqz"
       ]
     }
   }
 }
-
